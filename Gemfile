@@ -19,6 +19,14 @@ gem 'uglifier', '>= 1.3.0'
 # Use Bootstrap for Front End
 gem 'bootstrap', '~> 4.2.1'
 gem 'jquery-rails'
+
+# Use Active Admin for Back End
+gem 'activeadmin'
+
+# Use Devise and Pundit for Authentication and Authorization
+gem 'pundit'
+gem 'devise'
+
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
