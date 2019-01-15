@@ -1,5 +1,5 @@
 ActiveAdmin.register AdminUser do
-  permit_params :first_name, :last_name, :status, :role, :email, :password, :password_confirmation
+  permit_params :first_name, :last_name, :status, :role, :email, :password, :password_confirmation, :client_id
 
   index do
     selectable_column
@@ -30,6 +30,8 @@ ActiveAdmin.register AdminUser do
       f.input :email
       f.input :status
       f.input :role
+      para "Leave blank for Security Employees"
+      f.input :client_id, :as => :select, :collection => Client.all
       # f.input :password
       # f.input :password_confirmation
     end

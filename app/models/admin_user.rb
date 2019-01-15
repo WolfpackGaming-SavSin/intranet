@@ -1,4 +1,8 @@
 class AdminUser < ApplicationRecord
+
+  # Relationships
+  belongs_to :client, optional: true
+
   enum role: [:user, :coordinator, :supervisor, :manager, :agent, :admin]
   enum status: [:inactive, :active]
 
